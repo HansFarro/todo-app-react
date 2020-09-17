@@ -1,7 +1,7 @@
 import React from 'react';
-import { Forms, Input, Button, ContainerSel, Select }from './Form.styles';
+import { Forms, Input, Button, ContainerSel, Select } from './Form.styles';
 
-const Form = ({inputText,setInputText}) => {
+const Form = ({ inputText, setInputText, setTodos, todos}) => {
     // {inputText,setInputText, todos, setTodos}
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -9,6 +9,10 @@ const Form = ({inputText,setInputText}) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
+        setTodos([
+            ...todos,
+            {text: 'sth'}
+        ]);
     };
 
     return ( 
