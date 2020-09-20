@@ -16,6 +16,14 @@ export const TodoItem = styled.li`
   padding: 0rem 0.5rem;
 `;
 
+export const TodoLine = styled.li`
+  flex: 1;
+  padding: 0rem 0.5rem;
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through; 
+  opacity: 0.5;
+`;
+
 export const TodoButton = styled.button`
   background: #002c61;
   color: white;

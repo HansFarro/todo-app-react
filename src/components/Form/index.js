@@ -11,7 +11,7 @@ const Form = ({ inputText, setInputText, setTodos, todos}) => {
         e.preventDefault();
         setTodos([
             ...todos,
-            {text: 'sth'}
+            {text: inputText ,completed : false ,id: Math.random() * 1000}
         ]);
     };
 
