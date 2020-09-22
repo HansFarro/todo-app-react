@@ -2,11 +2,11 @@ import React from 'react';
 import { TodoContainer, TodoListLi } from './TodoList.styles';
 import Todo from '../Todo';
 
-const TodoList = ({todos,setTodos}) => {
+const TodoList = ({todos, setTodos, filterTodos}) => {
     return ( 
     <TodoContainer>
         <TodoListLi>
-            {todos.map(todo => (
+            {filterTodos.map(todo => (
                 <Todo 
                     text={todo.text} 
                     setTodos={setTodos} 
